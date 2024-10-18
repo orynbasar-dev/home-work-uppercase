@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface CardProps {
+interface Props {
   poster: string;
   title: string;
   year: string;
@@ -8,7 +8,7 @@ interface CardProps {
   imdbID: string;
 }
 
-const Card: React.FC<CardProps> = ({ poster, title, type, year, imdbID }) => {
+const Card: React.FC<Props> = ({ poster, title, type, year, imdbID }) => {
   return (
     <div className="card">
       <img src={poster} alt={title} className="w-60 h-72 object-cover border border-[#6627FF] rounded-xl"/>

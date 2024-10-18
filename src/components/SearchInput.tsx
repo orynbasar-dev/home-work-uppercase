@@ -2,10 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 
 import searchIcon from '../assets/icons/search.svg';
 
-interface SearchInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  // You can add additional props here if needed
-  name?: string
-}
+type SearchInputProps = InputHTMLAttributes<HTMLInputElement>
 
 const SearchInput: React.FC<SearchInputProps> = (props) => {
   return (
